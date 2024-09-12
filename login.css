@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://img.freepik.com/free-photo/clipboard-stethoscope_23-2148519763.jpg?t=st=1726117882~exp=1726121482~hmac=81b741c4509e0000bfa239ad88844ffee1c3c7ec2d45a168221bde7ef38d4079&w=996');
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Ensures the image covers the screen */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+.container {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #767474;
+    border: 1px solid #0a0909;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #030303;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#login-message, #signup-message {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#login-message.success, #signup-message.success {
+    color: #0f0;
+}
+
+#login-message.error, #signup-message.error {
+    color: #f00;
+}

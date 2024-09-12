@@ -1,43 +1,22 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Login/Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div class="container">
-        <div class="signup-form">
-            <h2>Sign up</h2>
-            <form id="signup-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password"><br><br>
-                <label for="role">Role:</label>
-                <select id="role" name="role">
-                    <option value="patient">Patient</option>
-                    <option value="doctor">Doctor</option>
-                </select><br><br>
-                <label for="membership">Membership:</label>
-                <select id="membership" name="membership">
-                    <option value="basic">Basic</option>
-                    <option value="premium">Premium</option>
-                    <option value="elite">Elite</option>
-                </select><br><br>
-                <input type="submit" value="Sign up">
-            </form>
-            <p id="signup-message"></p>
-            <p>Already have an account? <a href="login.html">Login</a></p>
+    <div class="signup-container">
+        <center><h2>Signup</h2></center>
+        <div class="card-container">
+            <div class="card">
+                <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_hW33cDWFV2oQAUdA72_SMPrbAD6VGJ9_kg&s" alt="Doctor Logo"></center>
+                <a href="doctor-signup.html"><button class="role-button" id="doctor-button">Doctor</button></a>
+            </div>
+            <div class="card">
+                <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzKDd4ktzPLnR2mT39CcUE7gOnQvpmpTIWw&s" alt="Patient Logo"></center>
+                <a href="patient.html"><button class="role-button" id="patient-button">Patient</button></a>
+            </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
